@@ -5,7 +5,9 @@ new Vue({
     job: "developer",
     website: "https://velog.io/@smooth97/Vue.js",
     websiteTag: '<a href="https://velog.io/@smooth97/Vue.js">Blog</a>',
-    age: 23
+    age: 23,
+    x: 0,
+    y: 0
   },
   methods: {
     greet: function(time) {
@@ -16,6 +18,10 @@ new Vue({
     },
     substract: function() {
       this.age--;
+    },
+    updateXY: function(event) {
+      this.x = event.offsetX;
+      this.y = event.offsetY;
     }
   }
 });
