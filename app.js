@@ -22,6 +22,12 @@ new Vue({
     updateXY: function(event) {
       this.x = event.offsetX;
       this.y = event.offsetY;
+    },
+    logName: function(e) {
+      console.log(e.target.value);
+    },
+    logAge: function(e) {
+      console.log(e.target.value);
     }
   }
 });
