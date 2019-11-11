@@ -12,3 +12,20 @@ body {
     text-align: center;
     border: 1px solid white;
 }
+
+span {
+    background: blueviolet;
+    display: inline-block;
+    padding: 10px;
+    color: #fff;
+    margin: 10px 0;
+}
+
+.available span {
+    background: orange;
+}
+
+.nearby span:after {
+    content: "nearby";
+    margin-left: 10px;
+}

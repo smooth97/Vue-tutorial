@@ -11,11 +11,12 @@
 
 <body>
   <div id="vue-app">
-    <h1>Keyboard Event</h1>
-    <label>Name : </label>
-    <input type="text" v-on:keyup.enter="logName" />
-    <label>Age : </label>
-    <input type="text" v-on:keyup.enter="logAge" />
+    <h1>Conditionals</h1>
+    <button v-on:click="error = !error">Toggle Error</button>
+    <button v-on:click="success = !success">Toggle Success</button>
+    <p v-if="error">There has been an error!</p>
+    <p v-else-if="success">Whooo, success!</p>
+    <p v-show="error">v-show error</p>
   </div>
   <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
   <script src="app.js"></script>
