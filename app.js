@@ -1,17 +1,16 @@
 new Vue({
   el: "#vue-app",
   data: {
-    available: false,
-    nearby: false,
-    error: false,
-    success: false
+    name: "smooth",
+    characters: ["Mario", "Luigi", "Yoshi", "Bowser"],
+    users: [
+      { name: "Ryu", age: 25 },
+      { name: "Yoshi", age: 35 },
+      { name: "Ken", age: 55 }
+    ]
   },
-  methods: {
-  
-  },
-  
+  methods: {}
 });
-
 
 // new Vue({
 //   el: "#vue-app",
@@ -45,12 +44,12 @@ new Vue({
 //       console.log(e.target.value);
 //     }
 //   },
-  // computed: {
-  //   compClasses: function(){
-  //     return {
-  //       available: this.available,
-  //       nearby: this.nearby
-  //     }
-  //   }
-  // }
+// computed: {
+//   compClasses: function(){
+//     return {
+//       available: this.available,
+//       nearby: this.nearby
+//     }
+//   }
+// }
 // });
